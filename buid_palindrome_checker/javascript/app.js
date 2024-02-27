@@ -5,9 +5,13 @@ const formInputElement = document.getElementById("text-input");
 let checkLowerCaseASCIICode = (lowerCaseCharacter) => {
     
     const asciiDecimalCharacerValue = lowerCaseCharacter.charCodeAt(0);
-
+    // check for a-z in ASCII Table
     if (asciiDecimalCharacerValue >= 97 && asciiDecimalCharacerValue <= 122){
 
+        return true;
+        
+    } // check for 0-9 in ASCII Table
+    else if (asciiDecimalCharacerValue >= 48 && asciiDecimalCharacerValue <= 57){
         return true;
     } else {
 
